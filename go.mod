@@ -1,10 +1,11 @@
-module github.com/alecthomas/chroma
+module github.com/alecthomas/chroma/v2
 
-go 1.13
+go 1.22
 
 require (
-	github.com/danwakefield/fnmatch v0.0.0-20160403171240-cbb64ac3d964
-	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/dlclark/regexp2 v1.4.0
-	github.com/stretchr/testify v1.3.0
+	github.com/alecthomas/assert/v2 v2.11.0
+	github.com/alecthomas/repr v0.4.0
+	github.com/dlclark/regexp2 v1.11.4
 )
+
+require github.com/hexops/gotextdiff v1.0.3 // indirect
