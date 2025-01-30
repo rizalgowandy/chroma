@@ -1,12 +1,19 @@
-module github.com/alecthomas/chroma/cmd/chroma
+module github.com/alecthomas/chroma/v2/cmd/chroma
 
-go 1.16
+go 1.22
 
-replace github.com/alecthomas/chroma => ../../
+toolchain go1.23.5
+
+replace github.com/alecthomas/chroma/v2 => ../../
 
 require (
-	github.com/alecthomas/chroma v0.0.0-00010101000000-000000000000
-	github.com/alecthomas/kong v0.2.17
-	github.com/mattn/go-colorable v0.1.8
-	github.com/mattn/go-isatty v0.0.13
+	github.com/alecthomas/chroma/v2 v2.15.0
+	github.com/alecthomas/kong v1.7.0
+	github.com/mattn/go-colorable v0.1.14
+	github.com/mattn/go-isatty v0.0.20
+)
+
+require (
+	github.com/dlclark/regexp2 v1.11.4 // indirect
+	golang.org/x/sys v0.29.0 // indirect
 )
